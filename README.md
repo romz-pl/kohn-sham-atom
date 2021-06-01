@@ -84,9 +84,12 @@ Additionally, each atom-specific directory contains referential solution stored 
 Obtained solutions (i.e. total energies and eigenvalues) are listed
 in the file `solution.dat` in each sub-directory and compared to the referential data.
 
-5. Directory `./src` contains the source code of `RAtom` plus `Makefile`. 
+5. In directory `./exm` there are `Gnuplot` scripts for ploting total electron density
+and for ploting total electron density. 
 
-6. It is recommended to start reading the program `RAtom` from `src/main.cpp` file.
+6. Directory `./src` contains the source code of `RAtom` plus `Makefile`. 
+
+7. It is recommended to start reading the program `RAtom` from `src/main.cpp` file.
 
 ## Author
 Zbigniew Romanowski, e-mail: romz@wp.pl
