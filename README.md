@@ -1,7 +1,11 @@
 # Kohn-Sham for atom
 
+## Introduction
+
 RAtom solves nonlinear Kohn-Sham equation for an neutral atom.
 The adaptive algorithm based on finite element method (FEM) is implemented.
+
+## References
 
 The implemented algorithm is described in the following papers:
 
@@ -81,8 +85,6 @@ In order to run all prepared examples (tests), go to ./exm directory and type ./
 Obtained solutions (i.e. total energies and eigenvalues) are listed
 in the file solution.dat in each sub-directory and compared to the referential data.
 
-
------------------------------------------------------------------------------
 Directory ./src contains the source code of RAtom plus Makefile. 
 It is recommended to start reading the program RAtom
 from "src/main.cpp" file.
