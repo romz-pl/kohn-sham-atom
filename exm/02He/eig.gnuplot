@@ -2,7 +2,7 @@
 # Gnuplot script for ploting eigenfunction.
 #
 set terminal png size 800,600 enhanced font "arial,16"
-set output 'eig.png'
+set output 'eig-He-1s2.png'
 set title "Eigenfunction 1s2 for He atom"
 set xlabel "Radius [bohr]"
 set ylabel "Eigenfunction(r)"
