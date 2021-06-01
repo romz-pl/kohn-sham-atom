@@ -6,7 +6,7 @@ do
         cd $item
         echo $item
         ../../bin/ratom.x atom.inp > solution.dat
-        gnuplot ../rho.gnuplot
+        gnuplot ./rho.gnuplot
         pnuplot ./eig.gnuplot
 
 #  The tool cmp compares bytes.
