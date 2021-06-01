@@ -92,5 +92,6 @@ and for ploting total electron density.
 7. It is recommended to start reading the program `RAtom` from `src/main.cpp` file.
 
 
+
 ## Author
 Zbigniew Romanowski, e-mail: romz@wp.pl
