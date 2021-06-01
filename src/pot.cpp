@@ -4,6 +4,7 @@
 #include "corrvwn.h"
 #include "constants.h"
 #include "paramdb.h"
+#include <stdexcept>
 
 //
 // Constructor

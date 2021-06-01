@@ -1,6 +1,7 @@
 #include "stateset.h"
 #include "constants.h"
 #include "paramdb.h"
+#include <stdexcept>
 
 // Initialization of static variable
 const StateDb StateSet::m_stateDb;

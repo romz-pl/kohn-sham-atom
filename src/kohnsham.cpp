@@ -1,6 +1,7 @@
 #include "kohnsham.h"
 #include "paramdb.h"
 #include "stateset.h"
+#include <stdexcept>
 
 //
 // Constructor
