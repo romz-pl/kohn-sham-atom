@@ -86,7 +86,5 @@ in the file solution.dat in each sub-directory and compared to the referential d
 It is recommended to start reading the program RAtom
 from "src/main.cpp" file.
 
-
-Kind regards,
-Zbigniew Romanowski
-romz@wp.pl
+## Author
+Zbigniew Romanowski, e-mail: romz@wp.pl
