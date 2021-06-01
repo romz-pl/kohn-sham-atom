@@ -7,6 +7,7 @@ do
         echo $item
         ../../bin/ratom.x atom.inp > solution.dat
         gnuplot ../rho.gnuplot
+        pnuplot ./eig.gnuplot
 
 #  The tool cmp compares bytes.
 #  There are some differences comparing non-integer values
