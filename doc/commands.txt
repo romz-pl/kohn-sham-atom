@@ -1,0 +1,104 @@
+RAtom
+Author: Zbigniew Romanowski
+romz@wp.pl
+
+This file contains the description of commands from input file for RAtom.
+
+
+Atom_Proton [positive integer]
+  Number of protons in atom  
+
+Atom_Rc [real number]
+  Radius of the atom in bohrs
+
+XC_Exch [possible values: slater, null]
+  Name of exchange approximation.
+
+XC_Corr [possible values: vwn, null]
+  Name of correlation approximation.
+
+
+Rho0_Default [possible values: Yes, No]
+  Defines the type of initial density representation.
+     If "Yes" then the default density is calculated from following equation:
+        \rho_0(r) = N^4/16 r^2 \exp{-Nr/2}
+     where $N$ is the number of electrons in the system.
+
+     If "No" then two parameters Rho0_c, Rho0_Alpha are read, and following
+     equation defines initial density
+        \rho_0(r) = 4 \pi c r^2 \exp{-\alpha r}
+ 
+
+Rho0_c [real number]
+  See parameter Rho0_Default
+
+
+Rho0_Alpha [real number]
+  See parameter Rho0_Default
+
+
+Solver_EigAdapt [possible values: Yes, No]
+  If "yes" adaptive algorithm is applied.
+
+Solver_EigNode [positive integer]
+  Number of nodes used for solution of eigenvalue problem.
+  If adaptive solved is used, then this parameter defines the initial
+  number of nodes.
+
+Solver_EigDeg [positive integer]
+  Degree of applied Lobatto polynomials for eigenvalue problem.
+
+Solver_EigAbsMaxCoef [real number]
+  Maximal allowed expantion coefficient in adaptive procedure
+  for eigenvalue problem. 
+
+Solver_EigAbsTol [real number]
+  Absolute error for calculation of eigenvalues for procedure 
+  dsbevx from LAPACK library.
+
+Solver_PsnAdapt [possible values: Yes, No]
+  If "Yes", then adaptive solver for Poisson equation is used.
+
+Solver_PsnNode [positive integer]
+  Number of nodes used for solution of Poisson equation.
+  If adaptive solved is used, then this parameter defines the initial
+  number of nodes.
+
+Solver_PsnDeg [positive integer]
+  Degree of applied Lobatto polynomials for Poisson equation.
+
+Solver_PsnAbsMaxCoef [real number]
+  Maximal allowed expantion coefficient in adaptive procedure
+  for Poisson equation. 
+
+Rho_Deg [positive integer]
+  Degree of applied Lobatto polynomials for approximation of electron density.
+
+Rho_Delta [real number]
+  Defines the approximation error for electron density.
+
+Scf_MaxIter [positive integer]
+  Muximum number of SCF iterations.
+
+Scf_Mix [real number between zero and one]
+  Mixing coefficient in SCF procedure.
+  
+Scf_Diff [positive real number] in hartree
+  Stop condition in SCF procedure.
+
+Out_RhoNode [positive integer]
+  Number of additional nodes (between computational) for output of electron density.
+  This is for smoothing out the plot.
+  10 points is usually sufficient.
+
+Out_RhoPath [string]
+  Output path for electron density.
+
+Out_EigNode [positive integer]
+  Number of additional nodes (between computational) for output of eigenvalues.
+  This is for smoothing out the plot.
+  10 points is usually sufficient.
+
+Out_EigPath [string]
+  Output path for eigenvectors.
+

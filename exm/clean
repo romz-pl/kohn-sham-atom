@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -f ./*/solution.dat 
+rm -f ./*/atom.inp.out
+rm -f ./*/rho.dat
+rm -f ./*/eig.dat*
+

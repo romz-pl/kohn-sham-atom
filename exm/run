@@ -1,0 +1,16 @@
+#!/bin/bash
+
+for item in $(ls)
+do
+    if [[ -d "${item}" && ! -L "${item}" ]]; then
+        cd $item
+        ../../bin/ratom.x atom.inp > solution.dat
+        cmp solution.dat solution.dat.ref
+        if [ $? -eq 0 ]; then
+            echo $item OK
+        else
+            echo $item FAILED
+        fi
+        cd ..
+    fi
+done

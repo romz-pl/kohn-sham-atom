@@ -1,0 +1,72 @@
+digraph G
+{
+Approx -> Heap;
+Approx -> HeapElt;
+#
+ApproxSolver -> Approx;
+ApproxSolver -> Element;
+ApproxSolver -> FunTilde;
+ApproxSolver -> ClpMtxBand;
+ApproxSolver -> Heap;
+ApproxSolver -> HeapElt;
+#
+ClpMtxBand -> ClpMtx;
+#
+EigProb -> EltInfo;
+EigProb -> ClpMtxBand;
+EigProb -> ClpMtx;
+EigProb -> Mesh;
+#
+Energy -> Pot;
+Energy -> EigResult;
+Energy -> EnerXXXX;
+#
+EnerXXXX -> FunEner;
+#
+FunEner -> Pot;
+#
+FunTilde -> Element;
+#
+#Gauss -> Fun1D;
+#
+#KohnSham -> Fun1D;
+KohnSham -> EigResult;
+KohnSham -> EigProb;
+#
+Lobatto ->ClpMtx;
+#
+Mesh -> BndrType;
+Mesh -> Element;
+#
+NonLinKs -> Pot;
+NonLinKs -> KohnSham;
+NonLinKs -> EigResult;
+NonLinKs -> Energy;
+NonLinKs -> Rho;
+NonLinKs -> RhoMix;
+#
+PoissonProb -> Mesh;
+PoissonProb -> ClpMtxBand;
+#
+Pot -> Xc;
+Pot -> PoissonProb;
+Pot -> Rho;
+#
+RAtom -> NonLinKs;
+RAtom -> Lobatto [label="S"];
+RAtom -> Gauss [label="S"];
+RAtom -> ParamDb [label="S"];
+RAtom -> StateSet [label="S"];
+#
+Rho -> Approx;
+Rho -> ApproxSolver;
+Rho -> RhoInit;
+#
+StateSet -> State;
+StateSet -> StateDb;
+#
+}
+
+# dot -Tpng dependency.gv -o dependency.png
+
+
