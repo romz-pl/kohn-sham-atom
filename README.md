@@ -2,27 +2,27 @@
 
 ## Introduction
 
-RAtom solves nonlinear Kohn-Sham equation for an neutral atom.
-The adaptive algorithm based on finite element method (FEM) is implemented.
+`RAtom` solves nonlinear [Kohn-Sham](https://en.wikipedia.org/wiki/Kohn%E2%80%93Sham_equations) equation for an neutral atom.
+The adaptive algorithm based on [finite element method (FEM)](https://en.wikipedia.org/wiki/Finite_element_method) is implemented.
 
 ## References
 
 The implemented algorithm is described in the following papers:
 
-1. Z. Romanowski, Adaptive solver of a Kohn-Sham equation for an atom
-   Modelling Simul. Mater. Sci. Eng. vol. 17, 045001 (2009)
+1. Z. Romanowski, *Adaptive solver of a Kohn-Sham equation for an atom*,
+   Modelling and Simulation in Materials Science and Engineering vol. 17, 045001 (2009), [abstract](https://iopscience.iop.org/article/10.1088/0965-0393/17/4/045001/meta)
    
-2. Z. Romanowski: Application of h-adaptive, high order finite 
-   element method to solve radial Schrödinger equation,
-   Molecular Physics, vol. 107, pp. 1339-1348  (2009).
+2. Z. Romanowski, *Application of h-adaptive, high order finite 
+   element method to solve radial Schrödinger equation*,
+   Molecular Physics vol. 107, pp. 1339-1348  (2009), [abstract](https://www.tandfonline.com/doi/abs/10.1080/00268970902873554)
 
-3. Z. Romanowski, A B-spline finite element solution of Kohn Sham equation for an atom
-   Modelling and Simulation in Materials Science and Engineering, vol. 16, p. 015003 (2008)
-   http://iopscience.iop.org/article/10.1088/0965-0393/16/1/015003/meta (abstract)
+3. Z. Romanowski, *A B-spline finite element solution of Kohn Sham equation for an atom*,
+   Modelling and Simulation in Materials Science and Engineering vol. 16, p. 015003 (2008)
+   [abstract](http://iopscience.iop.org/article/10.1088/0965-0393/16/1/015003/meta)
 
-4. Z. Romanowski, Numerical Solution of Kohn–Sham Equation for Atom,
-   Acta Physica Polonica B, vol. 38, p. 3263 (2007)
-   http://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=38&page=3263 (full paper)
+4. Z. Romanowski, *Numerical Solution of Kohn–Sham Equation for Atom*,
+   Acta Physica Polonica B vol. 38, p. 3263 (2007)
+   [full paper](http://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=38&page=3263)
 
 
 ## Algorithm description 
