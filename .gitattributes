@@ -1,0 +1,6 @@
+bin/* linguist-vendored
+build/* linguist-vendored
+doc/* linguist-documentation
+exm/* linguist-vendored
+lib/* linguist-vendored
+
